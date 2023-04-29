@@ -5,11 +5,13 @@ function SendMail(event){
     
         from_name : document.getElementById("fullName").value,
         email_id : document.getElementById("email_id").value,
+        project: document.getElementById("project").value,
         message : document.getElementById("message").value
     }
     emailjs.send("service_3ywvtgh","template_243rb0i",parms).then(function (res){
         document.getElementById("fullName").value ="";
         document.getElementById("email_id").value="";
+        document.getElementById("project").value="";
         document.getElementById("message").value="";
 
         console.log(res);

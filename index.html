@@ -11,6 +11,10 @@
     referrerpolicy="no-referrer" />
     <!--custome Css file link-->
     <link rel="stylesheet" href="./style.css"/>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+     </script>
+    
 </head>
 <body>
     <!-- custom cursors  -->
@@ -206,12 +210,12 @@
        </div>
 
       </div>
-      <form action="">
-        <input type="text" placeholder="name" class="box">
-        <input type="email" placeholder="email" class="box">
-        <input type="text" placeholder="Project" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-        <button type="submit" class="btn">send<i class="fas fa-paper-plane"></i></button>
+      <form onsubmit="SendMail(event)">
+        <input type="text" placeholder="name" class="box" id="fullName">
+        <input type="email" placeholder="email" class="box" id="email_id">
+        <input type="text" id="project" placeholder="Project" class="box">
+        <textarea cols="30" rows="10" class="box message" id="message" placeholder="message"></textarea>
+        <button class="btn">send<i class="fas fa-paper-plane"></i></button>
       </form>
     
 
