@@ -278,6 +278,12 @@ header .navclass ul li a:hover{
 .about .row-2 .skills .progress:nth-child(4) .bar span{
     width:70%;
 }
+.about .row-2 .skills .progress:nth-child(5) .bar span{
+    width:60%;
+}
+.about .row-2 .skills .progress:nth-child(5) .bar span{
+    width:60%;
+}
 
 
 .about .row .couter{
@@ -381,6 +387,13 @@ header .navclass ul li a:hover{
     flex:1 1 30rem;
     padding: 4rem;
     padding-bottom: 0;
+}
+.contact .row .content .social-media a{
+    display: inline-flex;
+    margin: 3rem 1rem;
+    font-size: 3rem;
+    padding-bottom: 0;     
+    color:var(--blue);   
 }
 .contact .row form{
     flex:1 1 45rem;

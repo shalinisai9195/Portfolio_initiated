@@ -11,6 +11,12 @@
     referrerpolicy="no-referrer" />
     <!--custome Css file link-->
     <link rel="stylesheet" href="./style.css"/>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+   </script>
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <!-- <script src="script.js"></script> -->
+   
 </head>
 <body>
     <!-- custom cursors  -->
@@ -42,7 +48,7 @@
     <h1>I'am <span>Thenmozhi</span></h1>
     <p>A Fullstack developer, innovative optimized solution seeker. Logical and results-driven full stack developer dedicated to building and optimizing user-focused websites and applications.Excited to be the deployment phase of my career as a developer. Techinically proficient and analytical problem solver with calm and focused demeanor.
     </p>
-    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+    <a href="#about"><button class="btn">Read more <i class="fas fa-user"></i></button></a>
 
 
    </section>
@@ -53,30 +59,29 @@
     <h1 class="heading"><span>About</span>me</h1>
     <div class="row">
        <div class="info">
-        <h3><span>Name :</span>Thenmozhi</h3>
+        <h3><span>Name :</span>Thenmozhi L</h3>
         <h3><span>Qualification :</span>Bachelor of Computer Application</h3>
         <h3><span>Post :</span>FullStack Developer</h3>
         <h3><span>Language :</span>English,Tamil</h3>
-        <a href="#"><button class="btn">Download CV<i class="fas fa-download"></i></button></a>
+        <a href="Thenmozhi_Resume1.pdf" download="Thenmozhi_Resume1.pdf">
+            <button class="btn">Download CV<i class="fas fa-download"></i></button>
+        </a>
 
        </div>
        <div class="couter">
          <div class="box">
-            <span>2+</span>
+            <span><<1</span>
             <h3>years of experience..</h3>
          </div>
          <div class="box">
-            <span>20+</span>
-            <h3>completed Projects</h3>
-         </div>
-         <div class="box">
             <span>10+</span>
-            <h3>Happy clients</h3>
-         </div>
-         <div class="box">
-            <span>20+</span>
             <h3>completed Projects</h3>
          </div>
+         <!-- <div class="box">
+            <span></span>
+            <h3>Happy clients</h3>
+         </div> -->
+         
 
        </div>
     </div>
@@ -100,6 +105,14 @@
                    <h3> React <span> 70% </span> </h3>
                    <div class="bar"> <span></span> </div>
                </div>
+               <div class="progress">
+                <h3> NodeJS & Express <span> 60% </span> </h3>
+                <div class="bar"> <span></span> </div>
+                <div class="progress">
+                    <h3> MongoDB & SQL <span> 60% </span> </h3>
+                    <div class="bar"> <span></span> </div>
+                </div>
+            </div>
             </div>   
            
       </div>
@@ -147,6 +160,18 @@
     <h1 class="heading">My<span>Portfolio</span></h1>
     <div class="box-container">
     <div class="box">
+       <a href="https://cosmic-pastelito-6cdefe.netlify.app"></a>
+      <img src="./asset/investors-study-investment-portfolio-together.jpg">  
+      
+    </div>
+    <div class="box">
+        <!-- <img src="./asset/investors-study-investment-portfolio-together.jpg"> -->
+        <button class="btn" style="color:brown">source<i class="fas fa-paper-plane"></i></button>
+        <button class="btn">Link<i class="fas fa-paper-plane"></i>
+          <a href="https://cosmic-pastelito-6cdefe.netlify.app"></a>
+        </button>
+    </div>
+    <!-- <div class="box">
         <img src="./asset/investors-study-investment-portfolio-together.jpg">
     </div>
     <div class="box">
@@ -154,13 +179,7 @@
     </div>
     <div class="box">
         <img src="./asset/investors-study-investment-portfolio-together.jpg">
-    </div>
-    <div class="box">
-        <img src="./asset/investors-study-investment-portfolio-together.jpg">
-    </div>
-    <div class="box">
-        <img src="./asset/investors-study-investment-portfolio-together.jpg">
-    </div>
+    </div> -->
     <div class="box">
         <img src="./asset/investors-study-investment-portfolio-together.jpg">
     </div>
@@ -181,20 +200,27 @@
              <h3><i class="fas fa-envelope"></i>shalinisai9195@gmail.com</h3>
              <h3><i class="fas fa-phone"></i>+91 988-443-0375</h3>
              <h3><i class="fas fa-map-marker-alt"></i>Chennai-600077, India.</h3>
+       <div class="social-media">
+          <a href=""><i class='bx bxl-facebook-circle' ></i></box-icon></a>
+          <a href=""> <i class='bx bxl-twitter' ></i></a>  
+          <a href=""><i class='bx bxl-instagram' ></i></a> 
 
-        </div>
+       </div>
+       </div>
 
       </div>
-      <form action="">
-        <input type="text" placeholder="name" class="box">
-        <input type="email" placeholder="email" class="box">
-        <input type="text" placeholder="Project" class="box">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-        <button type="submit" class="btn">send<i class="fas fa-paper-plane"></i></button>
+      
+        <form onsubmit="SendMail(event)">
+        <input type="text" id="fullName" placeholder="name" class="box" required>
+        <input type="email" id="email_id" placeholder="email" class="box" required>
+        <!-- <input type="text" id="project" placeholder="Project" class="box" required> -->
+        <textarea id="message" cols="30" rows="10" class="box message" placeholder="message" required></textarea>
+        <button type="submit"  class="btn">send<i class="fas fa-paper-plane"></i></button>
       </form>
     
 
     </div>
+    
 
 </section>
 
