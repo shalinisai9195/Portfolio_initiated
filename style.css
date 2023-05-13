@@ -236,7 +236,7 @@ header .navclass ul li a:hover{
 }
 .about .row-2 .skills .progress{
     padding: 1rem 0;
-    /* padding-left: 1rem; */
+     /* padding-left: 1rem;  */
     
 }
 .about .row-2 .skills .progress h3{
@@ -277,6 +277,12 @@ header .navclass ul li a:hover{
 }
 .about .row-2 .skills .progress:nth-child(4) .bar span{
     width:70%;
+}
+.about .row-2 .skills .progress:nth-child(5) .bar span{
+    width:50%;
+}
+.about .row-2 .skills .progress:nth-child(6) .bar span{
+    width:50%;
 }
 
 
@@ -346,6 +352,8 @@ header .navclass ul li a:hover{
     color: #fff;
     background-color: var(--blue);
 }
+
+/* Portfolio start */
 .portfolio .box-container{
     display: flex;
     align-items: center;
@@ -361,6 +369,18 @@ header .navclass ul li a:hover{
     margin: 2rem;
     overflow: hidden;
     cursor: pointer;
+    /* background-image: url(./asset/investors-study-investment-portfolio-together.jpg);
+    object-fit: cover; */
+    
+
+}
+
+.portfolio .box-container .box a i{
+    
+    color:#fff;
+    font-weight: bold;
+    font-size: 10rem;
+
 }
 .portfolio .box-container .box img{
     height: 100%;
@@ -370,6 +390,9 @@ header .navclass ul li a:hover{
 .portfolio .box-container .box img:hover{
     transform: scale(1.2);
 }
+
+/* Portfolio end */
+
 .contact .row{
     display: flex;
     align-items: center;
