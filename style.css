@@ -279,10 +279,17 @@ header .navclass ul li a:hover{
     width:70%;
 }
 .about .row-2 .skills .progress:nth-child(5) .bar span{
+<<<<<<< HEAD
     width:50%;
 }
 .about .row-2 .skills .progress:nth-child(6) .bar span{
     width:50%;
+=======
+    width:60%;
+}
+.about .row-2 .skills .progress:nth-child(5) .bar span{
+    width:60%;
+>>>>>>> 3f7ec7aecdf86539c89a905477b98e21cd57bcc9
 }
 
 
@@ -404,6 +411,13 @@ header .navclass ul li a:hover{
     flex:1 1 30rem;
     padding: 4rem;
     padding-bottom: 0;
+}
+.contact .row .content .social-media a{
+    display: inline-flex;
+    margin: 3rem 1rem;
+    font-size: 3rem;
+    padding-bottom: 0;     
+    color:var(--blue);   
 }
 .contact .row form{
     flex:1 1 45rem;
