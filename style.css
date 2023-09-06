@@ -273,24 +273,21 @@ header .navclass ul li a:hover{
     width:90%;
 }
 .about .row-2 .skills .progress:nth-child(3) .bar span{
-    width:75%;
+    width:80%;
 }
 .about .row-2 .skills .progress:nth-child(4) .bar span{
     width:70%;
 }
 .about .row-2 .skills .progress:nth-child(5) .bar span{
-<<<<<<< HEAD
-    width:50%;
+    width:60%;
 }
 .about .row-2 .skills .progress:nth-child(6) .bar span{
-    width:50%;
-=======
-    width:60%;
+    width:70%;
 }
-.about .row-2 .skills .progress:nth-child(5) .bar span{
+/* .about .row-2 .skills .progress:nth-child(5) .bar span{
     width:60%;
->>>>>>> 3f7ec7aecdf86539c89a905477b98e21cd57bcc9
-}
+
+} */
 
 
 .about .row .couter{
